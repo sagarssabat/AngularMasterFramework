@@ -1,0 +1,15 @@
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+body {
+    background-color: #FFAB00; // color: #FFAB00;
+}
+
+.relate {
+    position: relative;
+}
+
+.imgcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
