@@ -1,15 +1,28 @@
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 body {
     background-color: #FFAB00; // color: #FFAB00;
 }
 
-.relate {
-    position: relative;
+.section-home {
+    height: 100vh;
+    .imgcenter {
+        img {
+            width: 150px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .head-title {
+        font-family: 'Josefin Slab', serif;
+        text-align: center;
+    }
 }
 
-.imgcenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.relate {
+    position: relative;
 }
