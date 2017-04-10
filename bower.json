@@ -1,0 +1,17 @@
+{
+  "name": "angularmasterframework",
+  "description": "angular application",
+  "main": "index.js",
+  "authors": [
+    "sagarssabat <sagarssabat@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/sagarssabat/AngularMasterFramework",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
