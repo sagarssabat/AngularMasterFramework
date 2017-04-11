@@ -1,9 +1,43 @@
-<div class="section-home relate">
-
-    <div class="imgcenter">
-        <!--<img src="img/angular-icon.svg" alt="" class="img-responsive">-->
-        <h2 class="head-title">Angular Application<br> Starts Here...</h2>
-        <p ui-sref="home" class="text-center"><a href="">...back</a></p>
+<div class="section-about">
+    <div class="container">
+        <div class="about-form">
+            <h1 class="head-title">About Us</h1>
+            <form name="aboutForm">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3">
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="fname" class="form-control" placeholder="Firstname" ng-model="aboutFormData.fname"
+                                required>
+                            <div ng-show="aboutForm.fname.$error.required && aboutForm.fname.$touched" class="valid-data">
+                                Please Enter Firstname
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lname" class="form-control" placeholder="Lastname" ng-model="aboutFormData.lname"
+                                required>
+                            <div ng-show="aboutForm.lname.$error.required && aboutForm.lname.$touched" class="valid-data">
+                                Please Enter Firstname
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email" ng-model="aboutFormData.email" required>
+                            <div ng-show="aboutForm.email.$error.required && aboutForm.email.$touched" class="valid-data">
+                                Please Enter Email
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-default custom-btn" ng-disabled="aboutForm.$invalid" disabled="disabled">Submit</button>
+                </div>
+            </form>
+            <!--<h2 ng-show="aboutForm">Thank You</h2>-->
+        </div>
     </div>
-
 </div>

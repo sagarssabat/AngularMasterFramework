@@ -7,6 +7,17 @@
 
     function abtCtrl($scope) {
         $scope.message = "test done";
-    }
 
+        // $scope.unplugData = {};
+        // $scope.unplugDataSubmit = function (data) {
+        //     console.log(data);
+        //     NavigationService.unpluggedSubmit(data, function (data) {
+        //         console.log(data);
+        //     });
+        //     $scope.unpluggedFormComplete = true;
+        // };
+        // $scope.aboutForm = {
+        //     'fname': "Pratik"
+        // }
+    }
 })();

@@ -23,6 +23,44 @@ body {
     }
 }
 
+.head-title {
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+}
+
 .relate {
     position: relative;
+}
+
+.section-about {
+    margin-top: 90px;
+    .form-control {
+        background: transparent;
+        border: 1px solid #000;
+        border-radius: 0;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .form-group {
+        input[type="text"]::-webkit-input-placeholder {
+            color: #000;
+        }
+        input[type="email"]::-webkit-input-placeholder {
+            color: #000;
+        }
+        input {
+            color: #000;
+        }
+    }
+    .about-form {
+        .custom-btn {
+            color: #fff;
+            background-color: #b47900;
+            border-color: #b47900;
+        }
+        .valid-data {
+            color: red;
+        }
+    }
 }

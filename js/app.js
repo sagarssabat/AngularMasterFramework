@@ -21,13 +21,36 @@
 
              $urlRouterProvider.otherwise("/");
 
-             $locationProvider.html5Mode(true);
+             // use the HTML5 History API
+             $locationProvider.html5Mode(false);
          });
  })();
 
 
+ // preety url method by scotch
+ // angular.module('myApp', ['ngRoute'])
 
+ //     .config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, $routeProvider) {
 
+ //         $routeProvider
+ //             .when('/', {
+ //                 templateUrl: 'views/content/home.html',
+ //                 controller: homeCtrl
+ //             })
+ //             .when('/about', {
+ //                 templateUrl: 'views/content/about.html',
+ //                 controller: abtCtrl
+ //             });
+ //         //  .when('/contact', {
+ //         //      templateUrl: 'partials/contact.html',
+ //         //      controller: mainController
+ //         //  });
+
+ //         // use the HTML5 History API
+ //         $locationProvider.html5Mode(true);
+ //     });
+
+ // END preety url method by scotch
 
  // // JavaScript Document
  // var myApp = angular.module('myApp', [
